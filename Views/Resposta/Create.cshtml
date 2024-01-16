@@ -1,0 +1,64 @@
+@model App.Models.Resposta
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Aluno</h1>
+
+
+<div class="row justify-content-center align-items-center">
+    <div class="col-md-6">
+        <h4>Quem sou eu:</h4>
+        <hr />
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp1" class="control-label"></label>
+                <input asp-for="Resp1" class="form-control" />
+                <span asp-validation-for="Resp1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp2" class="control-label"></label>
+                <input asp-for="Resp2" class="form-control" />
+                <span asp-validation-for="Resp2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp3" class="control-label"></label>
+                <input asp-for="Resp3" class="form-control" />
+                <span asp-validation-for="Resp3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp4" class="control-label"></label>
+                <input asp-for="Resp4" class="form-control" />
+                <span asp-validation-for="Resp4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp5" class="control-label"></label>
+                <input asp-for="Resp5" class="form-control" />
+                <span asp-validation-for="Resp5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp6" class="control-label"></label>
+                <input asp-for="Resp6" class="form-control" />
+                <span asp-validation-for="Resp6" class="text-danger"></span>
+            </div>
+            <div class="form-group mt-3 text-center">
+                <button type="submit" class="btn btn-primary"><i class="bi bi-floppy2-fill"></i> Gravar minha resposta</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-6">
+        <img src="https://static.wixstatic.com/media/e241d5_2e63cb92a3df423eb6dd88d52c40d40d~mv2.gif" alt="">
+    </div>
+</div>
+
+<div class="mt-3 text-center">
+    <a asp-action="Index" class="btn btn-danger"><i class="bi bi-arrow-return-left"></i> Lista</a>
+</div>
+

@@ -1,0 +1,56 @@
+@model App.Models.Resposta
+
+@{
+    ViewData["Title"] = "Quem sou eu?";
+}
+
+<h1><i class="bi bi-person-circle"></i> Quem sou eu?</h1>
+
+<div class="mt-4">
+    <h4>Resposta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Resp1)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Resp1)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Resp2)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Resp2)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Resp3)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Resp3)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Resp4)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Resp4)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Resp5)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Resp5)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Resp6)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Resp6)
+        </dd>
+    </dl>
+    <p id="Nome" class="text-center h1 " style="display: none;" >
+        <i class="bi bi-person-circle"></i> @Html.DisplayFor(model => model.Nome)         
+     </p>
+     <div id="botao-revelar" class="text-center">
+        <a class="btn btn-success" onclick="document.querySelector('#Nome').style.display = 'block'"><i class="bi bi-person-circle"></i> Revelar Nome</a>
+     </div>
+</div>

@@ -1,0 +1,66 @@
+@model App.Models.Resposta
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Resposta</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resp1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resp1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resp2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resp2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resp3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resp3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resp4)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resp4)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resp5)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resp5)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resp6)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resp6)
+        </dd>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IP)
+        </dd>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sorteado)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.RespostaId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

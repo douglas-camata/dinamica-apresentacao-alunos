@@ -1,0 +1,61 @@
+@model App.Models.Resposta
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Resposta</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="RespostaId" />
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp1" class="control-label"></label>
+                <input asp-for="Resp1" class="form-control" />
+                <span asp-validation-for="Resp1" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp2" class="control-label"></label>
+                <input asp-for="Resp2" class="form-control" />
+                <span asp-validation-for="Resp2" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp3" class="control-label"></label>
+                <input asp-for="Resp3" class="form-control" />
+                <span asp-validation-for="Resp3" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp4" class="control-label"></label>
+                <input asp-for="Resp4" class="form-control" />
+                <span asp-validation-for="Resp4" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp5" class="control-label"></label>
+                <input asp-for="Resp5" class="form-control" />
+                <span asp-validation-for="Resp5" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Resp6" class="control-label"></label>
+                <input asp-for="Resp6" class="form-control" />
+                <span asp-validation-for="Resp6" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
